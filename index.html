@@ -58,20 +58,43 @@
         <!-- Featured Post -->
         <article class="post featured">
           <header class="major">
-            <h2><a href="#">Sunshine Resort Customers Analysis</a></h2>
-            <p>
-              This was a unique project, because it had a lot of customers coming in from various parts of the world
-              like Portugal, Spain, Italy etc. We discovered through thorough analysis and visualisation. The suggestion
-              we gave was to improve customer experience by personalising services based on their preferences. This
-              helped the resort to reduce churning rate by 10%. This analysis was performed using Microsoft Power BI.
+            <h2>
+              <a href="#">From Raw CSVs to a Hardened Production Database: MetroBank Case Study</a>
+            </h2>
+            <p style="text-align: justify">
+              Designed and delivered a production-grade PostgreSQL banking database covering the full data engineering
+              lifecycle: schema design, data ingestion, security, performance, and analytics. Built a 7-table normalised
+              schema — branches, customers, employees, accounts, transactions, loans, and an account_balance_audit_log —
+              using a parent-first migration strategy to enforce FK integrity across all tables. Implemented a
+              staging-to-production CSV loader that reads raw files into temporary all-text tables, cleanses and
+              normalises the data (phone formatting, email validation with fallback generation, type standardisation),
+              then merges into production via upsert — atomically, inside a single transaction with automatic rollback
+              on failure. Hardened the schema with regex CHECK constraints on emails and UK phone numbers, non-negative
+              balance guards, audit metadata (created_at, updated_at, created_by) on every table, and PL/pgSQL trigger
+              functions that automatically maintain updated_at and write an immutable audit record on every account
+              balance change. Configured role-based access control (app_user for CRUD, readonly_analyst for
+              SELECT-only), added B-tree indexes on high-frequency join and filter columns, and wrote 10+ business
+              analytics queries covering customer geography, portfolio breakdown, loan exposure, transaction trends, and
+              branch performance.
             </p>
+            <p style="text-align: justify">
+              Customer records arrive with validated email addresses and correctly formatted UK phone numbers (+44).
+              Account balances can never go negative. Foreign key constraints mean no transaction or loan can reference
+              a non-existent account or customer. The bank's data is reliable from the moment it enters the system — not
+              after a manual cleanup cycle.
+            </p>
+            <p style="text-align: justify">Every account balance change — regardless of which application or user triggered it — is automatically captured in <strong>account_balance_audit_log</strong> with the old value, new value, the amount of change, a timestamp, and the responsible database user. This satisfies a core requirement of financial audit frameworks (e.g. FCA, SOX) without relying on application developers to implement it correctly.</p>
           </header>
-          <a href="#" class="image main"><img src="images/resort.jpg" alt="" /></a>
+          <a href="#" class="image main"><img src="images/metrobank.jpg" alt="" /></a>
           <ul class="actions special">
-            <li><a href="#" class="button large">Check it out!</a></li>
             <li>
-            <a href="https://github.com/esodevops/" class="icon brands fa-github"><span class="label">GitHub</span></a>
-          </li>
+              <a href="https://ik.imagekit.io/wiryqrudj/ERD.png" target="_blank" class="button large">Check it out!</a>
+            </li>
+            <li>
+              <a href="https://github.com/esodevops/metrobank-prod" target="_blank" class="icon brands fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
           </ul>
         </article>
 
