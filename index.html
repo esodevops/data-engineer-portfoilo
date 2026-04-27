@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="shortcut icon" href="assets/portfolio.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/portfolio.svg" type="image/x-icon" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <style>
@@ -23,8 +23,12 @@
     <div id="wrapper" class="fade-in">
       <!-- Intro -->
       <div id="intro">
-        <h1 style="color: greenyellow;">Sulaimon Ekundayo Portfolio</h1>
-        <p>This portfolio presents my data engineering projects, demonstrating my ability to design scalable data pipelines,<br /> manage data infrastructure, and deliver data-driven solutions.</p>
+        <h1 style="color: greenyellow">Sulaimon Ekundayo Portfolio</h1>
+        <p>
+          This portfolio presents my data engineering projects, demonstrating my ability to design scalable data
+          pipelines,<br />
+          manage data infrastructure, and deliver data-driven solutions.
+        </p>
         <ul class="actions">
           <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
         </ul>
@@ -32,7 +36,7 @@
 
       <!-- Header -->
       <header id="header">
-        <a href="index.html" style="color: greenyellow;" class="logo">Major Projects</a>
+        <a href="index.html" style="color: greenyellow" class="logo">Major Projects</a>
       </header>
 
       <!-- Nav -->
@@ -43,12 +47,14 @@
         </ul>
         <ul class="icons">
           <li>
-            <a href="https://www.linkedin.com/in/sulaimon-ekundayo/" class="icon brands fa-linkedin"
-              target="_blank"><span class="label">LinkedIn</span></a
+            <a href="https://www.linkedin.com/in/sulaimon-ekundayo/" class="icon brands fa-linkedin" target="_blank"
+              ><span class="label">LinkedIn</span></a
             >
           </li>
           <li>
-            <a href="https://github.com/esodevops/" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a>
+            <a href="https://github.com/esodevops/" class="icon brands fa-github" target="_blank"
+              ><span class="label">GitHub</span></a
+            >
           </li>
         </ul>
       </nav>
@@ -83,12 +89,19 @@
               a non-existent account or customer. The bank's data is reliable from the moment it enters the system — not
               after a manual cleanup cycle.
             </p>
-            <p style="text-align: justify">Every account balance change — regardless of which application or user triggered it — is automatically captured in <strong>account_balance_audit_log</strong> with the old value, new value, the amount of change, a timestamp, and the responsible database user. This satisfies a core requirement of financial audit frameworks (e.g. FCA, SOX) without relying on application developers to implement it correctly.</p>
+            <p style="text-align: justify">
+              Every account balance change — regardless of which application or user triggered it — is automatically
+              captured in <strong>account_balance_audit_log</strong> with the old value, new value, the amount of
+              change, a timestamp, and the responsible database user. This satisfies a core requirement of financial
+              audit frameworks (e.g. FCA, SOX) without relying on application developers to implement it correctly.
+            </p>
           </header>
           <a href="#" class="image main"><img src="images/metrobank.jpg" alt="" /></a>
           <ul class="actions special">
             <li>
-              <a href="https://ik.imagekit.io/wiryqrudj/erd-postgre.png" target="_blank" class="button large">Check it out!</a>
+              <a href="https://ik.imagekit.io/wiryqrudj/erd-postgre.png" target="_blank" class="button large"
+                >Check it out!</a
+              >
             </li>
 
             <li>
@@ -103,36 +116,39 @@
         <section class="posts">
           <article>
             <header>
-              <h2><a href="#">Bank Fraud Detection Analysis Using SQL</a></h2>
+              <h2><a href="#">Bonga CommerceFlow: Production-Ready Ecommerce Data Pipeline</a></h2>
             </header>
-            <a href="#" class="image fit"><img src="images/fraud.jpg" alt="" /></a>
+            <a href="#" class="image fit"><img src="images/bonga.jpg" alt="" /></a>
             <p>
-              This project focused on identifying fraudulent banking transactions by analyzing large datasets using SQL.
-              Data was queried to detect unusual patterns such as high-frequency transactions, abnormal transaction
-              amounts, and activities occurring outside typical user behavior.
+              Built a production-ready data engineering pipeline for Bonga Ecommerce that ingests CSV datasets into
+              PostgreSQL using Docker, SQL, and automation scripts. The project includes clean folder organization,
+              ERD-backed schema design, idempotent load scripts, validation queries, local dev and production-like
+              environment profiles, and CI/CD automation with GitHub Actions.
             </p>
 
             <p>
-              Advanced SQL techniques including joins, aggregations, window functions, and conditional filtering were
-              used to segment customers and flag suspicious activities. Transactions were compared against historical
-              behavior to highlight anomalies and potential fraud cases.
+              Results:
+              <li style="text-align: justify; margin-left: 40px;"> 100 realistic rows loaded for each core table (products, customers, orders, orderitems).</li>
+              <li style="text-align: justify; margin-left: 40px;"> Repeatable pipeline execution with schema creation, data load, and integrity validation.</li>
+              <li style="text-align: justify; margin-left: 40px;"> Documented query questions and executable SQL solutions for analytics tasks.</li>
+              <li style="text-align: justify; margin-left: 40px;"> Secure setup with environment separation and GitHub Secrets for CI credentials.</li>
             </p>
 
             <p>
-              Based on the findings, recommendations were made to implement real-time monitoring rules, transaction
-              limits, and automated alerts for high-risk activities.
+              Client Benefits:
+              <li style="text-align: justify; margin-left: 40px;"> Faster onboarding for new engineers through a simple, documented workflow.</li>
+              <li style="text-align: justify; margin-left: 40px;"> Reliable and consistent data loading process with fewer manual errors.</li>
+              <li style="text-align: justify; margin-left: 40px;"> Better decision-making readiness through structured, queryable ecommerce data.</li>
+              <li style="text-align: justify; margin-left: 40px;"> Safer operations through secret management and data exposure policy controls.</li>
             </p>
 
-            <p>
-              <strong>Result:</strong> The analysis improved fraud detection accuracy, reduced false positives, and
-              enabled faster identification of suspicious transactions, contributing to enhanced security and risk
-              management.
-            </p>
             <ul class="actions special">
-              <li><a href="#" class="button">Check it out!</a></li>
+              <li><a  href="https://ik.imagekit.io/wiryqrudj/bonga.png" class="button" target="_blank">Check it out!</a></li>
               <li>
-            <a href="https://github.com/esodevops/" class="icon brands fa-github"><span class="label">GitHub</span></a>
-          </li>
+                <a href="https://github.com/esodevops/bonga-ecommerce" class="icon brands fa-github" target="_blank"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
             </ul>
           </article>
           <article>
@@ -177,9 +193,9 @@
               resulting in a more intuitive, efficient, and user-centered digital experience.
             </p>
             <ul class="actions special">
-              <li><a href="#" class="button">Check it out!</a></li>
+              <li><a href="https://ik.imagekit.io/wiryqrudj/bonga.png"   class="button" target="_blank">Check it out!</a></li>
               <li>
-                <a href="https://github.com/esodevops/" class="icon brands fa-github"><span class="label">GitHub</span></a>
+                <a href="https://github.com/esodevops/" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a>
               </li>
             </ul>
           </article>
@@ -214,7 +230,7 @@
             <ul class="actions special">
               <li><a href="#" class="button">Check it out!</a></li>
               <li>
-                <a href="https://github.com/esodevops/" class="icon brands fa-github"><span class="label">GitHub</span></a>
+                <a href="https://github.com/esodevops/"  target="_blank class="icon brands fa-github""><span class="label">GitHub</span></a>
               </li>
             </ul>
           </article>
@@ -245,13 +261,15 @@
             <ul class="actions special">
               <li><a href="#" class="button">Check it out!</a></li>
               <li>
-                <a href="https://github.com/esodevops/" class="icon brands fa-github"><span class="label">GitHub</span></a>
+                <a href="https://github.com/esodevops/" class="icon brands fa-github"
+                  ><span class="label">GitHub</span></a
+                >
               </li>
             </ul>
           </article>
         </section>
 
-         <!-- Footer -->
+        <!-- Footer -->
         <footer>
           <div class="pagination">
             <!-- <a href="#" class="previous">Prev</a> -->
@@ -268,9 +286,7 @@
         <section class="split contact">
           <section class="alt">
             <h3>Address</h3>
-            <p>
-              Manchester, UK
-            </p>
+            <p>Manchester, UK</p>
           </section>
           <section>
             <h3>Email</h3>
@@ -293,7 +309,13 @@
       <!-- Copyright -->
       <div id="copyright">
         <ul>
-          <li>&copy; <script>document.write(new Date().getFullYear());</script> Sulaimon Ekundayo</li>
+          <li>
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Sulaimon Ekundayo
+          </li>
           <!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li> -->
         </ul>
       </div>
