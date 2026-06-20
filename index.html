@@ -177,11 +177,11 @@
             </header>
             <a href="#" class="image fit"><img src="images/bonga.jpg" alt="" /></a>
             <p>
-              <strong>Project Overview:</strong> <br /> 
-              Bonga CommerceFlow is a production-ready ecommerce data engineering project that
-              automates the ingestion of CSV datasets into PostgreSQL using Docker, SQL scripts, Bash automation, and
-              GitHub Actions. The pipeline was designed to be repeatable, structured, and secure, with clear separation
-              between development and production-style workflows.
+              <strong>Project Overview:</strong> <br />
+              Bonga CommerceFlow is a production-ready ecommerce data engineering project that automates the ingestion
+              of CSV datasets into PostgreSQL using Docker, SQL scripts, Bash automation, and GitHub Actions. The
+              pipeline was designed to be repeatable, structured, and secure, with clear separation between development
+              and production-style workflows.
             </p>
 
             <p>
@@ -214,20 +214,36 @@
               </li>
             </p>
 
-            <p style="background-color: #f0f0f0; padding: 15px; border-left: 4px solid greenyellow; border-radius: 4px; margin: 15px 0;">
-              <strong style="color: black;">Result:</strong> <br />
-              The project delivers a reliable and reusable pipeline that successfully loads structured ecommerce
-              data into PostgreSQL and verifies data quality at each run. It supports secure secret handling,
-              cloud-backed file ingestion, and a documented workflow that is easy to run, test, and maintain.
+            <p
+              style="
+                background-color: #f0f0f0;
+                padding: 15px;
+                border-left: 4px solid greenyellow;
+                border-radius: 4px;
+                margin: 15px 0;
+              "
+            >
+              <strong style="color: black">Result:</strong> <br />
+              The project delivers a reliable and reusable pipeline that successfully loads structured ecommerce data
+              into PostgreSQL and verifies data quality at each run. It supports secure secret handling, cloud-backed
+              file ingestion, and a documented workflow that is easy to run, test, and maintain.
             </p>
 
-            <p style="background-color: #f0f0f0; padding: 15px; border-left: 4px solid greenyellow; border-radius: 4px; margin: 15px 0;">
-              <strong style="color: black;">Client Benefit:</strong> <br />
-              This project gives the client a cleaner and more production-aligned data workflow. It
-              reduces manual data loading effort, improves consistency across environments, protects sensitive datasets
-              by moving them to S3, and makes the pipeline easier to operate in both local development and CI/CD. The
-              result is faster onboarding, safer data handling, and a stronger foundation for reporting, analytics, and
-              future data platform growth.
+            <p
+              style="
+                background-color: #f0f0f0;
+                padding: 15px;
+                border-left: 4px solid greenyellow;
+                border-radius: 4px;
+                margin: 15px 0;
+              "
+            >
+              <strong style="color: black">Client Benefit:</strong> <br />
+              This project gives the client a cleaner and more production-aligned data workflow. It reduces manual data
+              loading effort, improves consistency across environments, protects sensitive datasets by moving them to
+              S3, and makes the pipeline easier to operate in both local development and CI/CD. The result is faster
+              onboarding, safer data handling, and a stronger foundation for reporting, analytics, and future data
+              platform growth.
             </p>
             <ul class="actions special">
               <li>
@@ -243,33 +259,56 @@
           <article>
             <header>
               <h2>
-                <a href="#">Customer Analysis in Airline Business</a>
+                <a href="#">SwiftRide Logistics: Production-Ready PostgreSQL Data Platform</a>
               </h2>
             </header>
-            <a href="#" class="image fit"><img src="images/airline.jpg" alt="" /></a>
+            <a href="#" class="image fit"><img src="images/swiftride.jpg" alt="" /></a>
             <p>
-              Conducted a data-driven analysis of airline customers to understand travel behavior, preferences, and pain
-              points. The analysis focused on booking patterns, customer segmentation, and service feedback to identify
-              key factors influencing customer satisfaction and retention.
+              Designed and deployed a relational data platform for a logistics company, replacing fragmented operational
+              records with a governed PostgreSQL system hosted on Supabase. The solution organizes customers, orders,
+              deliveries, drivers, vehicles, warehouses, inventory, and payments across four business schemas while
+              preserving end-to-end referential integrity.
             </p>
 
             <p>
-              Using customer data, distinct segments were identified based on travel frequency, class preference, and
-              purchasing behavior. Insights revealed that delays, pricing transparency, and personalized offers were the
-              main drivers of customer experience.
+              Built a one-command Bash loader that initializes the schema, applies validation constraints, imports CSV
+              files in foreign-key-safe order, repairs PostgreSQL sequences, and verifies row counts after ingestion.
+              Added DDL, DML, DQL, and DCL layers, environment-based credential handling, cascading rules, and
+              role-based access patterns for production-minded database operations.
             </p>
 
-            <p>
-              Based on these findings, recommendations included improving communication during delays, introducing
-              targeted promotions, and enhancing loyalty programs for frequent travelers.
-            </p>
+            <div
+              style="
+                background-color: #f0f0f0;
+                padding: 15px;
+                border-left: 4px solid greenyellow;
+                border-radius: 4px;
+                margin: 15px 0;
+                text-align: left;
+              "
+            >
+              <strong style="color: black">Measured Results</strong>
+              <ul style="color: black; margin: 10px 0 0 20px">
+                <li>3,960 records integrated across 8 relational tables and 4 schemas.</li>
+                <li>600 orders, deliveries, and payments analyzed across the operational lifecycle.</li>
+                <li>110.2M in total order value surfaced for revenue and customer-value analysis.</li>
+                <li>62 pending deliveries and 10 low-stock items identified for management action.</li>
+              </ul>
+            </div>
 
             <p>
-              As a result, the airline achieved improved customer satisfaction, increased repeat bookings, and more
-              effective marketing campaigns tailored to specific customer segments.
+              Converted SQL analysis into stakeholder-ready outputs. The reports translate customer value, driver workload, delivery performance,
+              payment health, revenue, and inventory risk into clear operational recommendations.
             </p>
             <ul class="actions special">
-              <li><a href="#" class="button">Check it out!</a></li>
+              <li>
+                <a href="https://ik.imagekit.io/wiryqrudj/swiftride_management_report.pdf" class="button" target="_blank">View Report</a>
+              </li>
+              <li>
+                <a href="https://github.com/esodevops/swiftride-logistics-database" class="icon brands fa-github" target="_blank"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
             </ul>
           </article>
           <article>
